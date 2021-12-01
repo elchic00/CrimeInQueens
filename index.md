@@ -1,4 +1,4 @@
-<h2><u>Crime in NYC: The trends of Covid and Historical Data</u></h2>
+<h2><u>Crime in Queens: The Trends of Crime Historically and Since the Covid-19 Outbreak</u></h2>
 Your sense of safety largely depends on the crime rate and homeless rate of where you live. Some area's of the city have suffered an increase in crime since the COVID-19 outbreak , and some areas of the city have suffered a high crime rate historically. I will use python to visualize those trends and categorize which neighborhoods have had an increase in crime since covid. This analysis is trying to identify the trend of crime.
 
 <h2><u>The data</u></h2>
