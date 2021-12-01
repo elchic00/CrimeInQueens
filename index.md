@@ -1,4 +1,4 @@
-## Crime in NYC: The trends of Covid and Historical Data
+<h2><u>Crime in NYC: The trends of Covid and Historical Data</u></h2>
 Your sense of safety largely depends on the crime rate and homeless rate of where you live. Some area's of the city have suffered an increase in crime since the COVID-19 outbreak , and some areas of the city have suffered a high crime rate historically. I will use python to visualize those trends and categorize which neighborhoods have had an increase in crime since covid. This analysis is trying to identify the trend of crime.
 
 <h2><u>The data</u></h2>
@@ -9,7 +9,17 @@ Your sense of safety largely depends on the crime rate and homeless rate of wher
 
 
 <h2><u>The Code</u></h2>
-<p> <a href="https://github.com/elchic00/CrimeInQueens/blob/main/CrimeData.py" target="_blank" > Repository to the Python code</a>
+<p> recent.OFNS_DESC = recent['OFNS_DESC'].apply(lambda x: 'FRAUD' if 'FRAUD' in x else x)
+recent.OFNS_DESC = recent['OFNS_DESC'].apply(lambda x: 'STOLEN PROPERTY' if 'STOLEN PROPERTY' in x else x)
+recent.OFNS_DESC = recent['OFNS_DESC'].apply(lambda x: 'ASSAULT' if 'ASSAULT 3' in x else x)
+recent.OFNS_DESC = recent['OFNS_DESC'].apply(lambda x: 'CAR THEFT' if 'GRAND LARCENY OF MOTOR VEHICLE' in x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'FRAUD' if 'FRAUD' in x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'FRAUD' if 'FRAUD' in x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'CAR THEFT' if 'GRAND LARCENY OF MOTOR VEHICLE' in x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'ASSAULT ' if 'ASSAULT 3' in x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'OTHER OFFENSES RELATED TO THEFT' in  x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'THEFT OF SERVICES' in  x else x)
+hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'BURGLAR' in x else x)
 </p>
 
 ## Visualizations
