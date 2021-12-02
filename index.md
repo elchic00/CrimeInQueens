@@ -82,6 +82,6 @@ plt.show()
 You can use the folium map side by side while viewing the histogram to see where each precinct is on the map.
 
    ![This is an image](/crimesByPrec.png)
-
+<p>You can use the folium map side by side while viewing the histogram to see where each precinct is on the map.</p>
    <iframe src="map.html" height="500" width="500"></iframe>
 
