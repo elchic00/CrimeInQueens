@@ -9,7 +9,8 @@ Your sense of safety largely depends on the crime rate and homeless rate of wher
 
 
 <h2><u>The Code</u></h2>
-`import pandas as pd
+```
+import pandas as pd
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
@@ -73,7 +74,8 @@ plt.show()
 // Make chart to count number of crimes in the last year in queens
 sns.countplot(data=recent, y='OFNS_DESC').set_title("Queens Year-to-date", fontdict={'fontsize': 20})
 #Change y label sizes
-plt.show()`
+plt.show()
+```
 
 <!--  crimeCountHis.to_csv('queensCH.csv') -->
 
