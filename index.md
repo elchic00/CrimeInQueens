@@ -9,6 +9,7 @@ Your sense of safety largely depends on the crime rate and homeless rate of wher
 
 
 <h2><u>The Code</u></h2>
+<a href="https://github.com/elchic00/CrimeInQueens/blob/main/CrimeData.py" target="_blank" > Repository to the Python code</a>
 ```
 import pandas as pd
 import numpy as np
@@ -76,10 +77,6 @@ sns.countplot(data=recent, y='OFNS_DESC').set_title("Queens Year-to-date", fontd
 #Change y label sizes
 plt.show()
 ```
-
-<!--  crimeCountHis.to_csv('queensCH.csv') -->
-
-<a href="https://github.com/elchic00/CrimeInQueens/blob/main/CrimeData.py" target="_blank" > Repository to the Python code</a>
 
 <h2><u>Visualizations</u></h2>
 You can use the folium map side by side with the histogram to see where each precinct is on the map.
