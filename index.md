@@ -1,4 +1,4 @@
-<h2><u> The Trend of Crime in Queens NYC</u></h2>
+ <h2><u> The Trend of Crime in Queens NYC</u></h2>
 Your sense of safety largely depends on the crime rate and homeless rate of where you live. Some area's of the city have suffered an increase in crime since the COVID-19 outbreak , and some areas of the city have suffered a high crime rate historically. I will use python to visualize those trends and categorize which neighborhoods have had an increase in crime since covid. This analysis is trying to identify the trend of crime.
 
 <h2><u>The data</u></h2>
@@ -82,7 +82,7 @@ plt.show()
 You can use the folium map side by side while viewing the histogram to see where each precinct is on the map.
 <p float="left">
     <iframe src="map.html" height="400" width="150"></iframe>
-   <img src="/crimesByPrec.png" height="400" width="150" />
+   <img src="crimesByPrec.png" height="400" width="150" />
 </p>
 <!--    ![Crimes by precinct in queens](/crimesByPrec.png) -->
 <!-- <p>You can use the folium map side by side while viewing the histogram to see where each precinct is on the map.</p> -->
