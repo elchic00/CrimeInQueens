@@ -79,7 +79,7 @@ plt.show()
 ```
 
 <h2><u>Visualizations</u></h2>
-You can use the folium map side by side with the histogram to see where each precinct is on the map.
+You can use the folium map side by side while viewing the histogram to see where each precinct is on the map.
 
 <iframe src="map.html" height="500" width="500"></iframe>
 
