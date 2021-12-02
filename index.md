@@ -11,6 +11,8 @@ Your sense of safety largely depends on the crime rate and homeless rate of wher
 <h2><u>The Code</u></h2>
 <a href="https://github.com/elchic00/CrimeInQueens/blob/main/CrimeData.py" target="_blank" > Repository to the Python code</a>
 
-## Visualizations
+<h2><u>Visualizations</u></h2>
+You can use the folium map side by side with the histogram to see where each precinct is on the map.
+
 <iframe src="map.html" height="500" width="500"></iframe>
 
