@@ -79,7 +79,8 @@ plt.show()
 ```
 
 <h2><u>Visualizations</u></h2>
-    ![Crimes by precinct in queens](/crimesByPrec.png)
+    
+  ![Crimes by precinct in queens](crimesByPrec.png)
     
  <p>You can use the folium map while viewing the histogram to see where each precinct is on the map.</p> 
    <iframe src="map.html" height="500" width="500"></iframe>
