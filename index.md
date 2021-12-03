@@ -23,6 +23,11 @@ import os
 hist = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrests_Data__Historic_.csv')
 recent = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrest_Data__Year_to_Date_.csv')
 
+//Get stratified sampling of my data by proportion.
+//stratSampHis = hist.groupby('ARREST_BORO', group_keys=False).apply(
+//    lambda x: x.sample(int(np.rint(100000 * len(x) / len(hist))))).reset_index(drop=True)
+
+
 // Change arrest date to datetime
 hist['ARREST_DATE'] = pd.to_datetime(hist['ARREST_DATE'])
 
@@ -60,7 +65,7 @@ geo_json.add_to(m)
 assCnt = len(crimeCountHis[crimeCountHis['OFNS_DESC'].str.contains('THEFT OF SERVICES')])
 print(assCnt)
 
-// VISUALIZATION ##
+// VISUALIZATION 
 sns.lineplot(data=crimeCountHis, x='ARREST_DATE', y='Crime Count', hue='OFNS_DESC', style = 'OFNS_DESC', ci=25, markers = True, dashes = False).set_title("Crime in Queens (2015-2020)", fontdict={'fontsize': 20})
 plt.legend(bbox_to_anchor=(1, 1), loc="best", borderaxespad=-2.4)
 plt.get_current_fig_manager().full_screen_toggle()
