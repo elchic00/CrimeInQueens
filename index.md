@@ -88,7 +88,7 @@ plt.show()
     
   ![Crimes by precinct in queens](crimesByPrec.png)
     
- <p>You can use the folium map while viewing the histogram to see where each precinct is on the map.</p> 
+ <p>You can use the folium map while viewing the histogram to see where each precinct is on the map. This way you can find the precinct covering your neighborhood</p> 
    <iframe src="map.html" height="500" width="500"></iframe>
    ![Total crime in queens this year](yearToDateQueens.png)
    ![Total historical crime](historicCrime.png)
