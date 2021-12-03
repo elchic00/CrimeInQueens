@@ -55,25 +55,26 @@ features = read_content['features']
 nodeData = os.path.join('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson')
 geo_json = folium.GeoJson(nodeData, popup=folium.GeoJsonPopup(fields=['precinct']))
 geo_json.add_to(m)
-m.save(outfile="m.html")
-// Sex crimes include
+
+// Crime count include
 assCnt = len(crimeCountHis[crimeCountHis['OFNS_DESC'].str.contains('THEFT OF SERVICES')])
 print(assCnt)
 
 // VISUALIZATION ##
 sns.lineplot(data=crimeCountHis, x='ARREST_DATE', y='Crime Count', hue='OFNS_DESC', style = 'OFNS_DESC', ci=25, markers = True, dashes = False).set_title("Crime in Queens (2015-2020)", fontdict={'fontsize': 20})
-plt.legend(bbox_to_anchor=(1, 1), loc="best", borderaxespad=-2)
+plt.legend(bbox_to_anchor=(1, 1), loc="best", borderaxespad=-2.4)
 plt.get_current_fig_manager().full_screen_toggle()
-plt.savefig('LineHis')
 plt.show()
+
 // Count by precinct 
 recent = recent[recent['ARREST_PRECINCT'] >= 100]
-sns.countplot(data=recent, y='OFNS_DESC', hue = 'ARREST_PRECINCT', palette = 'deep', order = recent['OFNS_DESC'].value_counts().index)
+sns.countplot(data=recent, y='OFNS_DESC', hue = 'ARREST_PRECINCT', palette = 'bright', order = recent['OFNS_DESC'].value_counts().index).set_title("Crime in Queens by Preinct", fontdict={'fontsize': 20})
 sns.set_style('ticks')
+plt.get_current_fig_manager().full_screen_toggle()
 plt.show()
 
 // Make chart to count number of crimes in the last year in queens
-sns.countplot(data=recent, y='OFNS_DESC').set_title("Queens Year-to-date", fontdict={'fontsize': 20})
+sns.countplot(data=recent, y='OFNS_DESC', order =recent['OFNS_DESC'].value_counts().index ).set_title("Crime in Queens Year-to-date", fontdict={'fontsize': 20})
 #Change y label sizes
 plt.show()
 ```
