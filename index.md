@@ -61,7 +61,7 @@ nodeData = os.path.join('/home/andrewa/Desktop/Fall 2021/Intro to data science/p
 geo_json = folium.GeoJson(nodeData, popup=folium.GeoJsonPopup(fields=['precinct']))
 geo_json.add_to(m)
 
-// Crime count include
+// checking number of occurences of certain crimes to check my visualization accuracy.
 assCnt = len(crimeCountHis[crimeCountHis['OFNS_DESC'].str.contains('THEFT OF SERVICES')])
 print(assCnt)
 
@@ -78,9 +78,11 @@ sns.set_style('ticks')
 plt.get_current_fig_manager().full_screen_toggle()
 plt.show()
 
-// Make chart to count number of crimes in the last year in queens
+# Make chart to count number of crimes in the last year in queens
 sns.countplot(data=recent, y='OFNS_DESC', order =recent['OFNS_DESC'].value_counts().index ).set_title("Crime in Queens Year-to-date", fontdict={'fontsize': 20})
-#Change y label sizes
+# Change axis labels and show plots
+plt.xlabel('Crime Count')
+plt.ylabel('Type of Crime')
 plt.show()
 ```
 
