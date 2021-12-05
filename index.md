@@ -122,7 +122,8 @@ plt.ylabel('Type of Crime')
 ![Total crime in queens this year](yearToDateQueens.png)
 ![Total historical crime](historicCrime.png)
    
-## You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down)
+### You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down)
+
 |Arrest Precinct            |Offense Description  |Avg Historic Crime Count|Avg Crime Count After Shutdown|Increase in Crime     |
 |---------------------------|---------------------|------------------------|------------------------------|----------------------|
 |100                        |ASSAULT 3 & RELATED OFFENSES|246                     |153                           |False                 |
