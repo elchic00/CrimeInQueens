@@ -28,8 +28,8 @@ import os
 import webbrowser
 
 ##CLEANING DATA AND SEPERATING INTO DATAFRAMES.##
-hist = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrests_Data__Historic_.csv')
-recent = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrest_Data__Year_to_Date_.csv')
+hist = pd.read_csv('NYPD_Arrests_Data__Historic_.csv')
+recent = pd.read_csv('NYPD_Arrest_Data__Year_to_Date_.csv')
 # Filter DF to only include precincts in queens (100-115)
 hist = hist[hist['ARREST_PRECINCT'] >= 100]
 recent = recent[recent['ARREST_PRECINCT'] >= 100]
@@ -81,22 +81,23 @@ hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'OTHER OFF
 hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'THEFT OF SERVICES' in  x else x)
 hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if "BURGLAR’S TOOLS" in x else x)
 
-# Group crime data by the boro and date, and count the number of crimes for each crime type.
+# Group crime data by the date, and count the number of crimes for each crime type.
 crimeCountHis = hist.groupby(['ARREST_DATE'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
+# Group crime data by the date and precinct, then count the number of crimes for each crime type.
 crimeCountHisPre = hist.groupby(['ARREST_DATE', 'ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
 
 
 # Folium Map configuration
 m = folium.Map(location = [40.742054, -73.769417], zoom_start = 11)
-with open('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson') as access_json:
+with open('PolicePrecincts.geojson') as access_json:
             read_content = json.load(access_json)
 features = read_content['features']
-nodeData = os.path.join('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson')
+nodeData = os.path.join('PolicePrecincts.geojson')
 # Add precinct popup to map
 geo_json = folium.GeoJson(nodeData, popup=folium.GeoJsonPopup(fields=['precinct']))
 geo_json.add_to(m)
 m.save(outfile="map.html")
-# webbrowser.open('map.html', new=2)
+webbrowser.open('map.html', new=2)
 
 
 # # VISUALIZATION # #
