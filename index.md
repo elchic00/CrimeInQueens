@@ -11,6 +11,13 @@ Your sense of safety largely depends on the crime rate and homeless rate of wher
 <h2><u>The Code</u></h2>
 <a href="https://github.com/elchic00/CrimeInQueens/blob/main/CrimeData.py" target="_blank" > Repository to the Python code</a>
 ```
+'''
+Name: Andrew Alagna
+Email: andrew.alagna98@myhunter.cuny.edu
+Resources: I spoke with St. John during the planning phase to decide how to cut down my data to a more reasonable size. I used data from - https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz 
+Title: Crime in Queens: The Trend of Crime Historically and After the Covid-19 Outbreak
+Theme: Social-justice
+'''
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -21,8 +28,8 @@ import os
 import webbrowser
 
 ##CLEANING DATA AND SEPERATING INTO DATAFRAMES.##
-hist = pd.read_csv('/NYPD_Arrests_Data__Historic_.csv')
-recent = pd.read_csv('/NYPD_Arrest_Data__Year_to_Date_.csv')
+hist = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrests_Data__Historic_.csv')
+recent = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrest_Data__Year_to_Date_.csv')
 # Filter DF to only include precincts in queens (100-115)
 hist = hist[hist['ARREST_PRECINCT'] >= 100]
 recent = recent[recent['ARREST_PRECINCT'] >= 100]
@@ -37,7 +44,9 @@ recent['ARREST_DATE'] = pd.to_datetime(recent['ARREST_DATE'])
 
 # Find the average crime count after the shutdown in march and the average crime rate of the last 5 years, then compare.
 crimeCountrec = recent.groupby(['ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
+# Get all dates after the shutdown in march of 2020.
 hisAfPand = hist[hist.ARREST_DATE > '2020-03-11']
+#Count the average crime by offense type and find the average per year after march 2020.
 hisAfPand = hisAfPand.groupby(['ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
 hisAfPand['Crime Count'] = round((hisAfPand['Crime Count'] + crimeCountrec['Crime Count'])/1.67)
 
@@ -49,9 +58,10 @@ histAvg.rename(columns = {'Crime Count':'Crime Count Historic Avg'},inplace = Tr
 
 # Merge histAvg and recentAvg and add new column to df to check if there was an increase in crime since covid.
 merged = pd.merge(histAvg, hisAfPand)
+# Make a new column to say if average crime rate of the last five years has increased since the shutdown.
 merged['Increase in Crime'] = merged['Crime Count Historic Avg'] < merged['Crime Count']
 print(merged)
-print(merged[['ARREST_PRECINCT','OFNS_DESC','Increase in Crime']])
+# print(merged[['ARREST_PRECINCT','OFNS_DESC','Increase in Crime']])
 merged.to_csv('merged.csv')
 
 
@@ -71,45 +81,46 @@ hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'OTHER OFF
 hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if 'THEFT OF SERVICES' in  x else x)
 hist.OFNS_DESC = hist['OFNS_DESC'].apply(lambda x: 'THEFT RELATED' if "BURGLAR'S" in x else x)
 
-# Group crime data by the boro and date, and count the number of crimes for each.
+# Group crime data by the boro and date, and count the number of crimes for each crime type.
 crimeCountHis = hist.groupby(['ARREST_DATE'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
 crimeCountHisPre = hist.groupby(['ARREST_DATE', 'ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
 
 
-#Folium Map
+# Folium Map configuration
 m = folium.Map(location = [40.742054, -73.769417], zoom_start = 11)
 with open('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson') as access_json:
             read_content = json.load(access_json)
 features = read_content['features']
-nodeData = os.path.join('/PolicePrecincts.geojson')
+nodeData = os.path.join('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson')
+# Add precinct popup to map
 geo_json = folium.GeoJson(nodeData, popup=folium.GeoJsonPopup(fields=['precinct']))
 geo_json.add_to(m)
 m.save(outfile="map.html")
 # webbrowser.open('map.html', new=2)
 
 
-# # VISUALIZATION 
+# # VISUALIZATION # #
+# Make a lineplot to show the trend of crime over the last 5 years.
 sns.lineplot(data=crimeCountHis, x='ARREST_DATE', y='Crime Count', hue='OFNS_DESC', style = 'OFNS_DESC', ci=25, markers = True, dashes = False).set_title("Crime in Queens (2015-2020)", fontdict={'fontsize': 20})
 plt.legend(bbox_to_anchor=(1, 1), loc="best", borderaxespad=-2.4)
 plt.get_current_fig_manager().full_screen_toggle()
 plt.savefig('LineHis')
 plt.xlabel('Arrest Year')
-# plt.show()
+plt.show()
 
-# # Count by precinct 
-# recent = recent[recent['ARREST_PRECINCT'] >= 100]
+# Count by crime type for each precinct 
 sns.countplot(data=recent, y='OFNS_DESC', hue = 'ARREST_PRECINCT', palette = 'bright', order = recent['OFNS_DESC'].value_counts().index).set_title("Crime in Queens by Preinct (YTD)", fontdict={'fontsize': 20})
 sns.set_style('ticks')
 plt.get_current_fig_manager().full_screen_toggle()
 plt.xlabel('Crime Count')
 plt.ylabel('Type of Crime')
-# plt.show()
+plt.show()
 
-# # Make chart to count number of crimes in the last year in queens
+# Make chart to count number of crimes over the last year in queens
 c = sns.countplot(data=recent, y='OFNS_DESC', order =recent['OFNS_DESC'].value_counts().index ).set_title("Crime in Queens Year-to-date", fontdict={'fontsize': 20})
 plt.xlabel('Crime Count')
 plt.ylabel('Type of Crime')
-# plt.show()
+plt.show()
 ```
 
 <h2><u>Visualizations</u></h2>
