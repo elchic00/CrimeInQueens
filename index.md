@@ -1,5 +1,5 @@
  <h2><u> The Trend of Crime in Queens NYC</u></h2>
-Your sense of safety largely depends on the crime rate and homeless rate of where you live. Some area's of the city have suffered an increase in crime since the COVID-19 outbreak , and some areas of the city have suffered a high crime rate historically. I will use python to visualize those trends and categorize which neighborhoods have had an increase in crime since covid. This analysis is trying to identify the trend of crime.
+Your sense of safety largely depends on the crime rate and homeless rate of where you live. Some area's of the city have suffered an increase in crime since the COVID-19 outbreak , and some areas of the city have suffered a high crime rate historically. I will use python to visualize those trends and categorize which neighborhoods have had an increase in crime since covid. This analysis is trying to identify the trend of crime in Queens.
 
 <h2><u>The data</u></h2>
    <p> <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data" target="_blank" > Historic crime data</a> </p>
@@ -116,10 +116,13 @@ plt.ylabel('Type of Crime')
     
 ![Crimes by precinct in queens](crimesByPrec.png)
     
-<h3>You can use the folium map while viewing the histogram to see where each precinct is on the map. This way you can find the precinct covering your neighborhood</h3> 
+<h3>You can use the folium map while viewing the histogram to see where each precinct is on the map. This way you can find the precinct covering your neighborhood.</h3> 
 <iframe src="map.html" height="500" width="500"></iframe>
 
+### This will show you the total # of crime's for each category in Queens NYC YTD.
 ![Total crime in queens this year](yearToDateQueens.png)
+
+### This will show you the trend of crime in Queens NYC over the last five years.
 ![Total historical crime](historicCrime.png)
    
 ### You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down)
