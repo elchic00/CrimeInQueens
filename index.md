@@ -21,8 +21,8 @@ import os
 import webbrowser
 
 ##CLEANING DATA AND SEPERATING INTO DATAFRAMES.##
-hist = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrests_Data__Historic_.csv')
-recent = pd.read_csv('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/NYPD_Arrest_Data__Year_to_Date_.csv')
+hist = pd.read_csv('/NYPD_Arrests_Data__Historic_.csv')
+recent = pd.read_csv('/NYPD_Arrest_Data__Year_to_Date_.csv')
 # Filter DF to only include precincts in queens (100-115)
 hist = hist[hist['ARREST_PRECINCT'] >= 100]
 recent = recent[recent['ARREST_PRECINCT'] >= 100]
@@ -81,7 +81,7 @@ m = folium.Map(location = [40.742054, -73.769417], zoom_start = 11)
 with open('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson') as access_json:
             read_content = json.load(access_json)
 features = read_content['features']
-nodeData = os.path.join('/home/andrewa/Desktop/Fall 2021/Intro to data science/project/PolicePrecincts.geojson')
+nodeData = os.path.join('/PolicePrecincts.geojson')
 geo_json = folium.GeoJson(nodeData, popup=folium.GeoJsonPopup(fields=['precinct']))
 geo_json.add_to(m)
 m.save(outfile="map.html")
