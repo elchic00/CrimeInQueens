@@ -119,8 +119,9 @@ plt.ylabel('Type of Crime')
 <h3>You can use the folium map while viewing the histogram to see where each precinct is on the map. This way you can find the precinct covering your neighborhood.</h3> 
 <iframe src="map.html" height="500" width="500"></iframe>
 
+### This chart shows the total number of arrests in Queens NYC
 ![Total crime in queens this year](yearToDateQueens.png)
-
+### This shows the total number of arrests in Queens NYC over the last five years.
 ![Total historical crime](historicCrime.png)
    
 ### You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down)
