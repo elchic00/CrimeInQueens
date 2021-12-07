@@ -138,202 +138,202 @@ plt.show()
    
 ### You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down)
 
-|Arrest Precinct            |Offense Description  |Avg Historic Crime Count|Avg Crime Count After Shutdown|Increase in Crime     |
-|---------------------------|---------------------|------------------------|------------------------------|----------------------|
-|100                        |ASSAULT 3 & RELATED OFFENSES|246                     |153                           |False                 |
-|100                        |PETIT LARCENY        |130                     |35                            |False                 |
-|100                        |FELONY ASSAULT       |112                     |103                           |False                 |
-|100                        |GRAND LARCENY        |47                      |17                            |False                 |
-|100                        |ROBBERY              |41                      |34                            |False                 |
-|100                        |BURGLARY             |32                      |24                            |False                 |
-|100                        |SEX CRIMES           |27                      |15                            |False                 |
-|100                        |FRAUDS               |8                       |7                             |False                 |
-|100                        |GRAND LARCENY OF MOTOR VEHICLE|7                       |4                             |False                 |
-|100                        |OFFENSES INVOLVING FRAUD|1                       |3                             |True                  |
-|101                        |ASSAULT 3 & RELATED OFFENSES|412                     |135                           |False                 |
-|101                        |FELONY ASSAULT       |256                     |226                           |False                 |
-|101                        |ROBBERY              |107                     |129                           |True                  |
-|101                        |PETIT LARCENY        |71                      |57                            |False                 |
-|101                        |BURGLARY             |52                      |43                            |False                 |
-|101                        |SEX CRIMES           |51                      |40                            |False                 |
-|101                        |GRAND LARCENY        |46                      |25                            |False                 |
-|101                        |FRAUDS               |20                      |4                             |False                 |
-|101                        |GRAND LARCENY OF MOTOR VEHICLE|15                      |22                            |True                  |
-|101                        |RAPE                 |8                       |8                             |False                 |
-|101                        |OFFENSES INVOLVING FRAUD|5                       |3                             |False                 |
-|102                        |ASSAULT 3 & RELATED OFFENSES|518                     |173                           |False                 |
-|102                        |FELONY ASSAULT       |205                     |110                           |False                 |
-|102                        |GRAND LARCENY        |187                     |129                           |False                 |
-|102                        |PETIT LARCENY        |138                     |35                            |False                 |
-|102                        |ROBBERY              |91                      |244                           |True                  |
-|102                        |BURGLARY             |60                      |64                            |True                  |
-|102                        |SEX CRIMES           |53                      |54                            |True                  |
-|102                        |GRAND LARCENY OF MOTOR VEHICLE|32                      |43                            |True                  |
-|102                        |THEFT-FRAUD          |29                      |11                            |False                 |
-|102                        |OFFENSES INVOLVING FRAUD|19                      |35                            |True                  |
-|102                        |FRAUDS               |14                      |14                            |False                 |
-|102                        |RAPE                 |9                       |24                            |True                  |
-|102                        |BURGLAR'S TOOLS      |5                       |14                            |True                  |
-|102                        |THEFT OF SERVICES    |2                       |2                             |False                 |
-|103                        |ASSAULT 3 & RELATED OFFENSES|605                     |208                           |False                 |
-|103                        |FELONY ASSAULT       |290                     |136                           |False                 |
-|103                        |PETIT LARCENY        |257                     |241                           |False                 |
-|103                        |ROBBERY              |236                     |305                           |True                  |
-|103                        |GRAND LARCENY        |95                      |150                           |True                  |
-|103                        |BURGLARY             |60                      |108                           |True                  |
-|103                        |SEX CRIMES           |45                      |47                            |True                  |
-|103                        |FRAUDS               |36                      |29                            |False                 |
-|103                        |GRAND LARCENY OF MOTOR VEHICLE|33                      |80                            |True                  |
-|103                        |OFFENSES INVOLVING FRAUD|26                      |23                            |False                 |
-|103                        |FRAUDULENT ACCOSTING |13                      |4                             |False                 |
-|103                        |RAPE                 |8                       |7                             |False                 |
-|103                        |BURGLAR'S TOOLS      |7                       |13                            |True                  |
-|103                        |THEFT OF SERVICES    |7                       |23                            |True                  |
-|103                        |THEFT-FRAUD          |5                       |2                             |False                 |
-|104                        |ASSAULT 3 & RELATED OFFENSES|439                     |379                           |False                 |
-|104                        |PETIT LARCENY        |245                     |204                           |False                 |
-|104                        |FELONY ASSAULT       |148                     |166                           |True                  |
-|104                        |GRAND LARCENY        |112                     |50                            |False                 |
-|104                        |ROBBERY              |102                     |74                            |False                 |
-|104                        |BURGLARY             |61                      |57                            |False                 |
-|104                        |SEX CRIMES           |41                      |41                            |False                 |
-|104                        |BURGLAR'S TOOLS      |15                      |23                            |True                  |
-|104                        |GRAND LARCENY OF MOTOR VEHICLE|13                      |8                             |False                 |
-|104                        |OFFENSES INVOLVING FRAUD|6                       |2                             |False                 |
-|104                        |RAPE                 |5                       |7                             |True                  |
-|104                        |THEFT-FRAUD          |3                       |2                             |False                 |
-|105                        |ASSAULT 3 & RELATED OFFENSES|607                     |393                           |False                 |
-|105                        |FELONY ASSAULT       |280                     |263                           |False                 |
-|105                        |ROBBERY              |116                     |98                            |False                 |
-|105                        |GRAND LARCENY        |105                     |57                            |False                 |
-|105                        |PETIT LARCENY        |91                      |83                            |False                 |
-|105                        |BURGLARY             |69                      |40                            |False                 |
-|105                        |SEX CRIMES           |47                      |51                            |True                  |
-|105                        |GRAND LARCENY OF MOTOR VEHICLE|45                      |32                            |False                 |
-|105                        |FRAUDS               |15                      |4                             |False                 |
-|105                        |OFFENSES INVOLVING FRAUD|8                       |27                            |True                  |
-|105                        |RAPE                 |6                       |7                             |True                  |
-|105                        |BURGLAR'S TOOLS      |3                       |13                            |True                  |
-|106                        |ASSAULT 3 & RELATED OFFENSES|408                     |362                           |False                 |
-|106                        |FELONY ASSAULT       |191                     |213                           |True                  |
-|106                        |PETIT LARCENY        |161                     |86                            |False                 |
-|106                        |GRAND LARCENY        |126                     |96                            |False                 |
-|106                        |ROBBERY              |121                     |74                            |False                 |
-|106                        |BURGLARY             |62                      |24                            |False                 |
-|106                        |SEX CRIMES           |38                      |39                            |True                  |
-|106                        |GRAND LARCENY OF MOTOR VEHICLE|31                      |46                            |True                  |
-|106                        |FRAUDS               |9                       |8                             |False                 |
-|106                        |OFFENSES INVOLVING FRAUD|5                       |13                            |True                  |
-|106                        |RAPE                 |5                       |3                             |False                 |
-|107                        |ASSAULT 3 & RELATED OFFENSES|327                     |125                           |False                 |
-|107                        |PETIT LARCENY        |138                     |69                            |False                 |
-|107                        |ROBBERY              |126                     |78                            |False                 |
-|107                        |FELONY ASSAULT       |123                     |190                           |True                  |
-|107                        |GRAND LARCENY        |100                     |98                            |False                 |
-|107                        |BURGLARY             |47                      |55                            |True                  |
-|107                        |SEX CRIMES           |30                      |31                            |True                  |
-|107                        |OFFENSES INVOLVING FRAUD|15                      |24                            |True                  |
-|107                        |GRAND LARCENY OF MOTOR VEHICLE|14                      |33                            |True                  |
-|107                        |FRAUDS               |10                      |10                            |False                 |
-|107                        |RAPE                 |6                       |3                             |False                 |
-|107                        |BURGLAR'S TOOLS      |5                       |7                             |True                  |
-|107                        |THEFT OF SERVICES    |1                       |3                             |True                  |
-|108                        |ASSAULT 3 & RELATED OFFENSES|339                     |109                           |False                 |
-|108                        |FELONY ASSAULT       |108                     |208                           |True                  |
-|108                        |GRAND LARCENY        |99                      |48                            |False                 |
-|108                        |PETIT LARCENY        |82                      |40                            |False                 |
-|108                        |ROBBERY              |56                      |54                            |False                 |
-|108                        |BURGLARY             |28                      |95                            |True                  |
-|108                        |SEX CRIMES           |28                      |46                            |True                  |
-|108                        |GRAND LARCENY OF MOTOR VEHICLE|12                      |19                            |True                  |
-|108                        |FRAUDS               |9                       |25                            |True                  |
-|108                        |OFFENSES INVOLVING FRAUD|9                       |32                            |True                  |
-|108                        |BURGLAR'S TOOLS      |7                       |5                             |False                 |
-|108                        |THEFT-FRAUD          |2                       |1                             |False                 |
-|109                        |PETIT LARCENY        |727                     |251                           |False                 |
-|109                        |ASSAULT 3 & RELATED OFFENSES|537                     |364                           |False                 |
-|109                        |ROBBERY              |224                     |137                           |False                 |
-|109                        |FELONY ASSAULT       |205                     |154                           |False                 |
-|109                        |GRAND LARCENY        |179                     |113                           |False                 |
-|109                        |BURGLARY             |88                      |73                            |False                 |
-|109                        |SEX CRIMES           |54                      |41                            |False                 |
-|109                        |BURGLAR'S TOOLS      |25                      |28                            |True                  |
-|109                        |GRAND LARCENY OF MOTOR VEHICLE|13                      |20                            |True                  |
-|109                        |OFFENSES INVOLVING FRAUD|11                      |2                             |False                 |
-|109                        |THEFT-FRAUD          |11                      |15                            |True                  |
-|109                        |FRAUDS               |10                      |7                             |False                 |
-|109                        |RAPE                 |9                       |4                             |False                 |
-|110                        |PETIT LARCENY        |748                     |234                           |False                 |
-|110                        |ASSAULT 3 & RELATED OFFENSES|535                     |437                           |False                 |
-|110                        |FELONY ASSAULT       |244                     |298                           |True                  |
-|110                        |ROBBERY              |163                     |115                           |False                 |
-|110                        |GRAND LARCENY        |152                     |84                            |False                 |
-|110                        |BURGLARY             |54                      |46                            |False                 |
-|110                        |SEX CRIMES           |51                      |75                            |True                  |
-|110                        |BURGLAR'S TOOLS      |24                      |15                            |False                 |
-|110                        |OFFENSES INVOLVING FRAUD|19                      |11                            |False                 |
-|110                        |GRAND LARCENY OF MOTOR VEHICLE|16                      |23                            |True                  |
-|110                        |FRAUDS               |11                      |8                             |False                 |
-|110                        |RAPE                 |10                      |5                             |False                 |
-|110                        |THEFT-FRAUD          |6                       |51                            |True                  |
-|111                        |ASSAULT 3 & RELATED OFFENSES|141                     |83                            |False                 |
-|111                        |PETIT LARCENY        |71                      |25                            |False                 |
-|111                        |GRAND LARCENY        |58                      |13                            |False                 |
-|111                        |FELONY ASSAULT       |56                      |43                            |False                 |
-|111                        |BURGLARY             |37                      |19                            |False                 |
-|111                        |ROBBERY              |29                      |8                             |False                 |
-|111                        |SEX CRIMES           |13                      |17                            |True                  |
-|111                        |GRAND LARCENY OF MOTOR VEHICLE|7                       |4                             |False                 |
-|111                        |BURGLAR'S TOOLS      |5                       |6                             |True                  |
-|112                        |PETIT LARCENY        |324                     |66                            |False                 |
-|112                        |SEX CRIMES           |174                     |68                            |False                 |
-|112                        |ASSAULT 3 & RELATED OFFENSES|150                     |137                           |False                 |
-|112                        |RAPE                 |98                      |101                           |True                  |
-|112                        |FELONY ASSAULT       |88                      |85                            |False                 |
-|112                        |GRAND LARCENY        |82                      |56                            |False                 |
-|112                        |ROBBERY              |24                      |50                            |True                  |
-|112                        |BURGLARY             |18                      |37                            |True                  |
-|112                        |BURGLAR'S TOOLS      |13                      |16                            |True                  |
-|112                        |GRAND LARCENY OF MOTOR VEHICLE|7                       |28                            |True                  |
-|112                        |FRAUDS               |4                       |8                             |True                  |
-|112                        |OFFENSES INVOLVING FRAUD|4                       |4                             |False                 |
-|113                        |ASSAULT 3 & RELATED OFFENSES|744                     |225                           |False                 |
-|113                        |FELONY ASSAULT       |301                     |128                           |False                 |
-|113                        |PETIT LARCENY        |222                     |77                            |False                 |
-|113                        |GRAND LARCENY        |155                     |292                           |True                  |
-|113                        |ROBBERY              |110                     |166                           |True                  |
-|113                        |FRAUDS               |59                      |28                            |False                 |
-|113                        |BURGLARY             |57                      |62                            |True                  |
-|113                        |SEX CRIMES           |57                      |59                            |True                  |
-|113                        |GRAND LARCENY OF MOTOR VEHICLE|42                      |74                            |True                  |
-|113                        |OFFENSES INVOLVING FRAUD|27                      |30                            |True                  |
-|113                        |RAPE                 |10                      |21                            |True                  |
-|113                        |BURGLAR'S TOOLS      |7                       |10                            |True                  |
-|113                        |THEFT-FRAUD          |7                       |37                            |True                  |
-|113                        |FRAUDULENT ACCOSTING |1                       |6                             |True                  |
-|114                        |ASSAULT 3 & RELATED OFFENSES|650                     |229                           |False                 |
-|114                        |PETIT LARCENY        |295                     |120                           |False                 |
-|114                        |FELONY ASSAULT       |257                     |396                           |True                  |
-|114                        |ROBBERY              |144                     |189                           |True                  |
-|114                        |GRAND LARCENY        |132                     |181                           |True                  |
-|114                        |BURGLARY             |55                      |116                           |True                  |
-|114                        |SEX CRIMES           |46                      |75                            |True                  |
-|114                        |FRAUDS               |23                      |32                            |True                  |
-|114                        |GRAND LARCENY OF MOTOR VEHICLE|15                      |57                            |True                  |
-|114                        |BURGLAR'S TOOLS      |11                      |8                             |False                 |
-|114                        |OFFENSES INVOLVING FRAUD|11                      |55                            |True                  |
-|114                        |RAPE                 |7                       |8                             |True                  |
-|114                        |THEFT-FRAUD          |3                       |4                             |True                  |
-|115                        |ASSAULT 3 & RELATED OFFENSES|750                     |217                           |False                 |
-|115                        |FELONY ASSAULT       |282                     |110                           |False                 |
-|115                        |PETIT LARCENY        |219                     |332                           |True                  |
-|115                        |ROBBERY              |164                     |107                           |False                 |
-|115                        |GRAND LARCENY        |137                     |116                           |False                 |
-|115                        |SEX CRIMES           |88                      |177                           |True                  |
-|115                        |BURGLARY             |61                      |86                            |True                  |
-|115                        |GRAND LARCENY OF MOTOR VEHICLE|27                      |59                            |True                  |
-|115                        |FRAUDS               |19                      |16                            |False                 |
-|115                        |OFFENSES INVOLVING FRAUD|16                      |23                            |True                  |
-|115                        |BURGLAR'S TOOLS      |15                      |19                            |True                  |
-|115                        |RAPE                 |12                      |4                             |False                 |
-|115                        |THEFT OF SERVICES    |8                       |11                            |True                  |
+|Arrest Precinct|Offense Description           |Crime Count Historic Avg|Crime Count|Increase in Crime|
+|---------------|------------------------------|------------------------|-----------|-----------------|
+|100            |ASSAULT 3 & RELATED OFFENSES  |246                     |153        |False            |
+|100            |PETIT LARCENY                 |130                     |35         |False            |
+|100            |FELONY ASSAULT                |112                     |103        |False            |
+|100            |GRAND LARCENY                 |47                      |17         |False            |
+|100            |ROBBERY                       |41                      |34         |False            |
+|100            |BURGLARY                      |32                      |24         |False            |
+|100            |SEX CRIMES                    |27                      |15         |False            |
+|100            |FRAUDS                        |8                       |7          |False            |
+|100            |GRAND LARCENY OF MOTOR VEHICLE|7                       |4          |False            |
+|100            |OFFENSES INVOLVING FRAUD      |1                       |3          |True             |
+|101            |ASSAULT 3 & RELATED OFFENSES  |412                     |135        |False            |
+|101            |FELONY ASSAULT                |256                     |226        |False            |
+|101            |ROBBERY                       |107                     |129        |True             |
+|101            |PETIT LARCENY                 |71                      |57         |False            |
+|101            |BURGLARY                      |52                      |43         |False            |
+|101            |SEX CRIMES                    |51                      |40         |False            |
+|101            |GRAND LARCENY                 |46                      |25         |False            |
+|101            |FRAUDS                        |20                      |4          |False            |
+|101            |GRAND LARCENY OF MOTOR VEHICLE|15                      |22         |True             |
+|101            |RAPE                          |8                       |8          |False            |
+|101            |OFFENSES INVOLVING FRAUD      |5                       |3          |False            |
+|102            |ASSAULT 3 & RELATED OFFENSES  |518                     |173        |False            |
+|102            |FELONY ASSAULT                |205                     |110        |False            |
+|102            |GRAND LARCENY                 |187                     |129        |False            |
+|102            |PETIT LARCENY                 |138                     |35         |False            |
+|102            |ROBBERY                       |91                      |244        |True             |
+|102            |BURGLARY                      |60                      |64         |True             |
+|102            |SEX CRIMES                    |53                      |54         |True             |
+|102            |GRAND LARCENY OF MOTOR VEHICLE|32                      |43         |True             |
+|102            |THEFT-FRAUD                   |29                      |11         |False            |
+|102            |OFFENSES INVOLVING FRAUD      |19                      |35         |True             |
+|102            |FRAUDS                        |14                      |14         |False            |
+|102            |RAPE                          |9                       |24         |True             |
+|102            |BURGLAR'S TOOLS               |5                       |14         |True             |
+|102            |THEFT OF SERVICES             |2                       |2          |False            |
+|103            |ASSAULT 3 & RELATED OFFENSES  |605                     |208        |False            |
+|103            |FELONY ASSAULT                |290                     |136        |False            |
+|103            |PETIT LARCENY                 |257                     |241        |False            |
+|103            |ROBBERY                       |236                     |305        |True             |
+|103            |GRAND LARCENY                 |95                      |150        |True             |
+|103            |BURGLARY                      |60                      |108        |True             |
+|103            |SEX CRIMES                    |45                      |47         |True             |
+|103            |FRAUDS                        |36                      |29         |False            |
+|103            |GRAND LARCENY OF MOTOR VEHICLE|33                      |80         |True             |
+|103            |OFFENSES INVOLVING FRAUD      |26                      |23         |False            |
+|103            |FRAUDULENT ACCOSTING          |13                      |4          |False            |
+|103            |RAPE                          |8                       |7          |False            |
+|103            |BURGLAR'S TOOLS               |7                       |13         |True             |
+|103            |THEFT OF SERVICES             |7                       |23         |True             |
+|103            |THEFT-FRAUD                   |5                       |2          |False            |
+|104            |ASSAULT 3 & RELATED OFFENSES  |439                     |379        |False            |
+|104            |PETIT LARCENY                 |245                     |204        |False            |
+|104            |FELONY ASSAULT                |148                     |166        |True             |
+|104            |GRAND LARCENY                 |112                     |50         |False            |
+|104            |ROBBERY                       |102                     |74         |False            |
+|104            |BURGLARY                      |61                      |57         |False            |
+|104            |SEX CRIMES                    |41                      |41         |False            |
+|104            |BURGLAR'S TOOLS               |15                      |23         |True             |
+|104            |GRAND LARCENY OF MOTOR VEHICLE|13                      |8          |False            |
+|104            |OFFENSES INVOLVING FRAUD      |6                       |2          |False            |
+|104            |RAPE                          |5                       |7          |True             |
+|104            |THEFT-FRAUD                   |3                       |2          |False            |
+|105            |ASSAULT 3 & RELATED OFFENSES  |607                     |393        |False            |
+|105            |FELONY ASSAULT                |280                     |263        |False            |
+|105            |ROBBERY                       |116                     |98         |False            |
+|105            |GRAND LARCENY                 |105                     |57         |False            |
+|105            |PETIT LARCENY                 |91                      |83         |False            |
+|105            |BURGLARY                      |69                      |40         |False            |
+|105            |SEX CRIMES                    |47                      |51         |True             |
+|105            |GRAND LARCENY OF MOTOR VEHICLE|45                      |32         |False            |
+|105            |FRAUDS                        |15                      |4          |False            |
+|105            |OFFENSES INVOLVING FRAUD      |8                       |27         |True             |
+|105            |RAPE                          |6                       |7          |True             |
+|105            |BURGLAR'S TOOLS               |3                       |13         |True             |
+|106            |ASSAULT 3 & RELATED OFFENSES  |408                     |362        |False            |
+|106            |FELONY ASSAULT                |191                     |213        |True             |
+|106            |PETIT LARCENY                 |161                     |86         |False            |
+|106            |GRAND LARCENY                 |126                     |96         |False            |
+|106            |ROBBERY                       |121                     |74         |False            |
+|106            |BURGLARY                      |62                      |24         |False            |
+|106            |SEX CRIMES                    |38                      |39         |True             |
+|106            |GRAND LARCENY OF MOTOR VEHICLE|31                      |46         |True             |
+|106            |FRAUDS                        |9                       |8          |False            |
+|106            |OFFENSES INVOLVING FRAUD      |5                       |13         |True             |
+|106            |RAPE                          |5                       |3          |False            |
+|107            |ASSAULT 3 & RELATED OFFENSES  |327                     |125        |False            |
+|107            |PETIT LARCENY                 |138                     |69         |False            |
+|107            |ROBBERY                       |126                     |78         |False            |
+|107            |FELONY ASSAULT                |123                     |190        |True             |
+|107            |GRAND LARCENY                 |100                     |98         |False            |
+|107            |BURGLARY                      |47                      |55         |True             |
+|107            |SEX CRIMES                    |30                      |31         |True             |
+|107            |OFFENSES INVOLVING FRAUD      |15                      |24         |True             |
+|107            |GRAND LARCENY OF MOTOR VEHICLE|14                      |33         |True             |
+|107            |FRAUDS                        |10                      |10         |False            |
+|107            |RAPE                          |6                       |3          |False            |
+|107            |BURGLAR'S TOOLS               |5                       |7          |True             |
+|107            |THEFT OF SERVICES             |1                       |3          |True             |
+|108            |ASSAULT 3 & RELATED OFFENSES  |339                     |109        |False            |
+|108            |FELONY ASSAULT                |108                     |208        |True             |
+|108            |GRAND LARCENY                 |99                      |48         |False            |
+|108            |PETIT LARCENY                 |82                      |40         |False            |
+|108            |ROBBERY                       |56                      |54         |False            |
+|108            |BURGLARY                      |28                      |95         |True             |
+|108            |SEX CRIMES                    |28                      |46         |True             |
+|108            |GRAND LARCENY OF MOTOR VEHICLE|12                      |19         |True             |
+|108            |FRAUDS                        |9                       |25         |True             |
+|108            |OFFENSES INVOLVING FRAUD      |9                       |32         |True             |
+|108            |BURGLAR'S TOOLS               |7                       |5          |False            |
+|108            |THEFT-FRAUD                   |2                       |1          |False            |
+|109            |PETIT LARCENY                 |727                     |251        |False            |
+|109            |ASSAULT 3 & RELATED OFFENSES  |537                     |364        |False            |
+|109            |ROBBERY                       |224                     |137        |False            |
+|109            |FELONY ASSAULT                |205                     |154        |False            |
+|109            |GRAND LARCENY                 |179                     |113        |False            |
+|109            |BURGLARY                      |88                      |73         |False            |
+|109            |SEX CRIMES                    |54                      |41         |False            |
+|109            |BURGLAR'S TOOLS               |25                      |28         |True             |
+|109            |GRAND LARCENY OF MOTOR VEHICLE|13                      |20         |True             |
+|109            |OFFENSES INVOLVING FRAUD      |11                      |2          |False            |
+|109            |THEFT-FRAUD                   |11                      |15         |True             |
+|109            |FRAUDS                        |10                      |7          |False            |
+|109            |RAPE                          |9                       |4          |False            |
+|110            |PETIT LARCENY                 |748                     |234        |False            |
+|110            |ASSAULT 3 & RELATED OFFENSES  |535                     |437        |False            |
+|110            |FELONY ASSAULT                |244                     |298        |True             |
+|110            |ROBBERY                       |163                     |115        |False            |
+|110            |GRAND LARCENY                 |152                     |84         |False            |
+|110            |BURGLARY                      |54                      |46         |False            |
+|110            |SEX CRIMES                    |51                      |75         |True             |
+|110            |BURGLAR'S TOOLS               |24                      |15         |False            |
+|110            |OFFENSES INVOLVING FRAUD      |19                      |11         |False            |
+|110            |GRAND LARCENY OF MOTOR VEHICLE|16                      |23         |True             |
+|110            |FRAUDS                        |11                      |8          |False            |
+|110            |RAPE                          |10                      |5          |False            |
+|110            |THEFT-FRAUD                   |6                       |51         |True             |
+|111            |ASSAULT 3 & RELATED OFFENSES  |141                     |83         |False            |
+|111            |PETIT LARCENY                 |71                      |25         |False            |
+|111            |GRAND LARCENY                 |58                      |13         |False            |
+|111            |FELONY ASSAULT                |56                      |43         |False            |
+|111            |BURGLARY                      |37                      |19         |False            |
+|111            |ROBBERY                       |29                      |8          |False            |
+|111            |SEX CRIMES                    |13                      |17         |True             |
+|111            |GRAND LARCENY OF MOTOR VEHICLE|7                       |4          |False            |
+|111            |BURGLAR'S TOOLS               |5                       |6          |True             |
+|112            |PETIT LARCENY                 |324                     |66         |False            |
+|112            |SEX CRIMES                    |174                     |68         |False            |
+|112            |ASSAULT 3 & RELATED OFFENSES  |150                     |137        |False            |
+|112            |RAPE                          |98                      |101        |True             |
+|112            |FELONY ASSAULT                |88                      |85         |False            |
+|112            |GRAND LARCENY                 |82                      |56         |False            |
+|112            |ROBBERY                       |24                      |50         |True             |
+|112            |BURGLARY                      |18                      |37         |True             |
+|112            |BURGLAR'S TOOLS               |13                      |16         |True             |
+|112            |GRAND LARCENY OF MOTOR VEHICLE|7                       |28         |True             |
+|112            |FRAUDS                        |4                       |8          |True             |
+|112            |OFFENSES INVOLVING FRAUD      |4                       |4          |False            |
+|113            |ASSAULT 3 & RELATED OFFENSES  |744                     |225        |False            |
+|113            |FELONY ASSAULT                |301                     |128        |False            |
+|113            |PETIT LARCENY                 |222                     |77         |False            |
+|113            |GRAND LARCENY                 |155                     |292        |True             |
+|113            |ROBBERY                       |110                     |166        |True             |
+|113            |FRAUDS                        |59                      |28         |False            |
+|113            |BURGLARY                      |57                      |62         |True             |
+|113            |SEX CRIMES                    |57                      |59         |True             |
+|113            |GRAND LARCENY OF MOTOR VEHICLE|42                      |74         |True             |
+|113            |OFFENSES INVOLVING FRAUD      |27                      |30         |True             |
+|113            |RAPE                          |10                      |21         |True             |
+|113            |BURGLAR'S TOOLS               |7                       |10         |True             |
+|113            |THEFT-FRAUD                   |7                       |37         |True             |
+|113            |FRAUDULENT ACCOSTING          |1                       |6          |True             |
+|114            |ASSAULT 3 & RELATED OFFENSES  |650                     |229        |False            |
+|114            |PETIT LARCENY                 |295                     |120        |False            |
+|114            |FELONY ASSAULT                |257                     |396        |True             |
+|114            |ROBBERY                       |144                     |189        |True             |
+|114            |GRAND LARCENY                 |132                     |181        |True             |
+|114            |BURGLARY                      |55                      |116        |True             |
+|114            |SEX CRIMES                    |46                      |75         |True             |
+|114            |FRAUDS                        |23                      |32         |True             |
+|114            |GRAND LARCENY OF MOTOR VEHICLE|15                      |57         |True             |
+|114            |BURGLAR'S TOOLS               |11                      |8          |False            |
+|114            |OFFENSES INVOLVING FRAUD      |11                      |55         |True             |
+|114            |RAPE                          |7                       |8          |True             |
+|114            |THEFT-FRAUD                   |3                       |4          |True             |
+|115            |ASSAULT 3 & RELATED OFFENSES  |750                     |217        |False            |
+|115            |FELONY ASSAULT                |282                     |110        |False            |
+|115            |PETIT LARCENY                 |219                     |332        |True             |
+|115            |ROBBERY                       |164                     |107        |False            |
+|115            |GRAND LARCENY                 |137                     |116        |False            |
+|115            |SEX CRIMES                    |88                      |177        |True             |
+|115            |BURGLARY                      |61                      |86         |True             |
+|115            |GRAND LARCENY OF MOTOR VEHICLE|27                      |59         |True             |
+|115            |FRAUDS                        |19                      |16         |False            |
+|115            |OFFENSES INVOLVING FRAUD      |16                      |23         |True             |
+|115            |BURGLAR'S TOOLS               |15                      |19         |True             |
+|115            |RAPE                          |12                      |4          |False            |
+|115            |THEFT OF SERVICES             |8                       |11         |True             |
