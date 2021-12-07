@@ -1,15 +1,35 @@
- <h2><u> The Trend of Crime in Queens NYC</u></h2>
-Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data & visualize trends, and a folium map to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since the Covid-19 shutdown. I am trying to visualize and identify the trend of crime in Queens NYC.
 
+<header id = "top">
+<h2><u> The Trend of Crime in Queens NYC</u></h2>
+Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data & visualize trends, and a folium map to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since the Covid-19 shutdown. I am trying to visualize and identify the trend of crime in Queens NYC.
+</header>
+<br/><br/>
+You can use the links below to jump to different sections on the page.
+
+<nav id="nav-wrap">
+  <ul id="nav" className="nav">
+    <li className="current"><a className="smoothscroll" href="#data">The Data</a></li>
+    <li><a className="smoothscroll" href="#code">The Code</a></li>
+    <li><a className="smoothscroll" href="#vis">Visualizations</a></li>
+    <li><a className="smoothscroll" href="#incr">True/False Table</a></li>
+  </ul>
+</nav>
+
+
+<header id = "data"> 
 <h2><u>The Data</u></h2>
    <p> <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/" target="_blank" > Historic crime data</a> </p>
   <p><a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc " target="_blank" >Recent crime data   </a></p>
-   <p> <a href="https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz" target="_blank" > Police precincts GeoJson</a></p>
+   <p> <a href="https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz" target="_blank" > Police precincts GeoJson</a></p> 
+</header>
  
 
 
+<header id = "code">
 <h2><u>The Code</u></h2>
 <a href="https://github.com/elchic00/CrimeInQueens/blob/main/CrimeData.py" target="_blank" > Repository to the Python code</a>
+</header>
+
 ```
 '''
 Name: Andrew Alagna
@@ -124,6 +144,7 @@ plt.ylabel('Type of Crime')
 plt.show()
 ```
 
+<header id = "vis"> </header>
 <h2><u>Visualizations</u></h2>
 ### This chart shows the crime in Queens by precinct YTD
 ![Crimes by precinct in queens](crimesByPrec.png)
@@ -133,10 +154,17 @@ plt.show()
 
 ### This chart shows the total number of arrests in Queens NYC
 ![Total crime in queens this year](yearToDateQueens.png)
+
 ### This shows the total number of arrests in Queens NYC over the last five years.
 ![Total historical crime](historicCrime.png)
-   
+
+<header id = "incr"></header>
 ### You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down)
+
+<a href="#top" class="back-to-top">
+  Back to Top &uarr;
+</a>
+
 
 |Arrest Precinct|Offense Description           |Avg Historic Crime Count (2015-2020)|Avg Crime Count After March 2020|Increase in Crime|
 |---------------|------------------------------|------------------------------------|--------------------------------|-----------------|
