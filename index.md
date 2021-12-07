@@ -1,8 +1,8 @@
  <h2><u> The Trend of Crime in Queens NYC</u></h2>
-Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data and visualize trends, and folium to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since covid. I am trying to visualize and identify the trend of crime in Queens.
+Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data & visualize trends, and a folium map to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since the Covid-19 shutdown. I am trying to visualize and identify the trend of crime in Queens NYC.
 
 <h2><u>The Data</u></h2>
-   <p> <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data" target="_blank" > Historic crime data</a> </p>
+   <p> <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/" target="_blank" > Historic crime data</a> </p>
   <p><a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc " target="_blank" >Recent crime data   </a></p>
    <p> <a href="https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz" target="_blank" > Police precincts GeoJson</a></p>
  
