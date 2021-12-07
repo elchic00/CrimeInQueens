@@ -4,7 +4,10 @@ Email: andrew.alagna98@myhunter.cuny.edu
 Resources: I spoke with St. John during the planning phase to help decide how to cut down my data to a more reasonable size. I used data from - https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz 
 Title: Crime in Queens: The Trend of Crime Historically and After the Covid-19 Outbreak
 Theme: Social-justice
-Abstract:Your sense of safety largely depends on the crime rate of where you live. Some areas of the city have suffered an increase in crime since the COVID-19 outbreak , while some areas of the city have suffered a high crime rate historically. I use python Pandas and dataframes to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data and visualize trends, and folium to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since covid. I am trying to visualize and identify the trend of crime in Queens.
+Abstract: Your sense of safety largely depends on the crime rate of where you live. Since the shutdown in March of 2020, it feels as if there has been an uptick in theft related crimes. 
+I'm also thinking that certain areas of the city have suffered an increase in crime since the COVID-19 outbreak , while some areas of the city have suffered a high crime rate historically. 
+I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data and visualize trends, and folium to display the area of each precinct. 
+I then categorized which neighborhoods and types of crime have increased since the shutdown in March of 2020. I am trying to visualize and identify the trend of crime in Queens.
 Relevance to NYC: The trend in crime in NYC affects everyone, because we all want to see that crime is decreasing in order to feel safe where we live.
 URL: https://elchic00.github.io/CrimeInQueens/.
 GitHub: https://github.com/elchic00 
@@ -71,7 +74,7 @@ hisAfPand['Crime Count'] = round((hisAfPand['Crime Count'] + crimeCountrec['Crim
 # Make arrest date only have the year to filter by year
 hist['ARREST_DATE'] = hist.ARREST_DATE.dt.year
 
-# Average crime rate over the last 5 years
+# Average crime rate per year over the last 5 years
 histAvg = hisToPand.groupby(['ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
 histAvg['Crime Count'] = round(histAvg['Crime Count']/5.225)
 histAvg.rename(columns = {'Crime Count':'Crime Count Historic Avg'},inplace = True)
