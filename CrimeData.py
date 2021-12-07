@@ -1,9 +1,14 @@
 '''
 Name: Andrew Alagna
 Email: andrew.alagna98@myhunter.cuny.edu
-Resources: I spoke with St. John during the planning phase to decide how to cut down my data to a more reasonable size. I used data from - https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz 
+Resources: I spoke with St. John during the planning phase to help decide how to cut down my data to a more reasonable size. I used data from - https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz 
 Title: Crime in Queens: The Trend of Crime Historically and After the Covid-19 Outbreak
 Theme: Social-justice
+Abstract:Your sense of safety largely depends on the crime rate of where you live. Some areas of the city have suffered an increase in crime since the COVID-19 outbreak , while some areas of the city have suffered a high crime rate historically. I use python Pandas and dataframes to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data and visualize trends, and folium to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since covid. I am trying to visualize and identify the trend of crime in Queens.
+Relevance to NYC: The trend in crime in NYC affects everyone, because we all want to see that crime is decreasing in order to feel safe where we live.
+URL: https://elchic00.github.io/CrimeInQueens/.
+GitHub: https://github.com/elchic00 
+LinkedIn: https://www.linkedin.com/in/andrew-a-10b88215b/ 
 '''
 import pandas as pd
 import numpy as np
@@ -52,8 +57,25 @@ print(merged)
 merged.to_csv('merged.csv')
 
 
+
+
+# Find the average crime count after the shutdown in march.
+crimeCountrec = recent.groupby(['ARREST_DATE'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
+# Get all dates after the shutdown in march of 2020 and the prior 5 years.
+hisAfPand = hist[hist.ARREST_DATE > '2020-03-11']
+hisToPand = hist[hist.ARREST_DATE <= '2020-03-11']
+#Count the average crime by offense type and find the average per year after march 2020.
+hisAfPand = hisAfPand.groupby(['ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
+hisAfPand['Crime Count'] = round((hisAfPand['Crime Count'] + crimeCountrec['Crime Count'])/1.67)
+
 # Make arrest date only have the year to filter by year
 hist['ARREST_DATE'] = hist.ARREST_DATE.dt.year
+
+# Average crime rate over the last 5 years
+histAvg = hisToPand.groupby(['ARREST_PRECINCT'])['OFNS_DESC'].value_counts().reset_index(name='Crime Count')
+histAvg['Crime Count'] = round(histAvg['Crime Count']/5.225)
+histAvg.rename(columns = {'Crime Count':'Crime Count Historic Avg'},inplace = True)
+
 
 # Clean crimes to combine similar types of crime as one to count.
 recent.OFNS_DESC = recent['OFNS_DESC'].apply(lambda x: 'FRAUD' if 'FRAUD' in x else x)

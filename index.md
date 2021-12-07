@@ -128,7 +128,7 @@ plt.show()
 ### This chart shows the crime in Queens by precinct YTD
 ![Crimes by precinct in queens](crimesByPrec.png)
     
-<h3>You can use the folium map while viewing the histogram to see where each precinct is on the map. This way you can find the precinct covering your neighborhood.</h3> 
+### You can use the folium map while viewing the histogram above to see where each precinct is on the map. This way you can find the precinct covering your neighborhood.
 <iframe src="map.html" height="500" width="500"></iframe>
 
 ### This chart shows the total number of arrests in Queens NYC
