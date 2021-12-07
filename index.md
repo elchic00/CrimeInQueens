@@ -1,4 +1,4 @@
- <h2><u> The Trend of Crime in Queens NYC </u></h2>
+ <h2><u>The Trend of Crime in Queens NYC </u></h2>
 Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data and visualize trends, and folium to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since covid. I am trying to visualize and identify the trend of crime in Queens. 
 
 <h2><u>The Data</u></h2>
