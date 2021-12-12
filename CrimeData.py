@@ -1,13 +1,14 @@
 '''
 Name: Andrew Alagna
 Email: andrew.alagna98@myhunter.cuny.edu
-Resources: I spoke with St. John during the planning phase to help decide how to cut down my data to a more reasonable size. I used data from - https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz, https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz 
+Resources: I spoke with St. John during the planning phase to help decide how to cut down my data to a more reasonable size. I decided to focus only on Queens NYC and only violent/theft related crime.
+I used data from - historic crime data which i filtered to the last five years and only certain theft/violent crime = https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/data, crime year to date filtered by types of crimes https://data.cityofnewyork.us/Public-Safety/NYPD-Arrest-Data-Year-to-Date-/uip8-fykc , polce precincts geoJson= https://data.cityofnewyork.us/Public-Safety/Police-Precincts/78dh-3ptz
 Title: Crime in Queens: The Trend of Crime Historically and After the Covid-19 Outbreak
 Theme: Social-justice
 Abstract: Your sense of safety largely depends on the crime rate of where you live. Since the shutdown in March of 2020, it feels as if there has been an uptick in theft related crimes. 
 I'm also thinking that certain areas of the city have suffered an increase in crime since the COVID-19 outbreak , while some areas of the city have suffered a high crime rate historically. 
 I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data and visualize trends, and folium to display the area of each precinct. 
-I then categorized which neighborhoods and types of crime have increased since the shutdown in March of 2020. I am trying to visualize and identify the trend of crime in Queens.
+I categorized which neighborhoods and types of crime have increased since the shutdown in March of 2020, and visualize the historic and year-to-date data with graphs. I am trying to visualize and identify the trend of crime in Queens.
 Relevance to NYC: The trend in crime in NYC affects everyone, because we all want to see that crime is decreasing in order to feel safe where we live.
 URL: https://elchic00.github.io/CrimeInQueens/.
 GitHub: https://github.com/elchic00 
