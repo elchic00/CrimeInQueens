@@ -3,17 +3,7 @@
 Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data & visualize trends, and a folium map to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since the Covid-19 shutdown. I am trying to visualize and identify the trend of crime in Queens NYC.
 </header>
 <br/>
-<!-- You can use the links below to jump to different sections on the page.
 
- <nav id="nav-wrap">
-  <ul id="nav" className="nav">
-    <li className="current"><a className="smoothscroll" href="#data">The Data</a></li>
-    <li><a className="smoothscroll" href="#code">The Code</a></li>
-    <li><a className="smoothscroll" href="#vis">Visualizations</a></li>
-    <li><a className="smoothscroll" href="#incr">True/False Table</a></li>
-  </ul>
-</nav> 
- -->
 <header id = "data"> 
 <h2><u>The Data</u></h2>
    <p> <a href="https://data.cityofnewyork.us/Public-Safety/NYPD-Arrests-Data-Historic-/8h9b-rp9u/" target="_blank" > Historic crime data</a> </p>
