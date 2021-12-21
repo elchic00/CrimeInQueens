@@ -5,14 +5,14 @@ Your sense of safety largely depends on the crime rate of where you live. I use 
 <br/>
 You can use the links below to jump to different sections on the page.
 
-<nav id="nav-wrap">
+<!-- <nav id="nav-wrap">
   <ul id="nav" className="nav">
     <li className="current"><a className="smoothscroll" href="#data">The Data</a></li>
     <li><a className="smoothscroll" href="#code">The Code</a></li>
     <li><a className="smoothscroll" href="#vis">Visualizations</a></li>
     <li><a className="smoothscroll" href="#incr">True/False Table</a></li>
   </ul>
-</nav>
+</nav> -->
 
 <header id = "data"> 
 <h2><u>The Data</u></h2>
