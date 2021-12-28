@@ -1,6 +1,8 @@
 <header id = "top">
 <h2><u> The Trend of Crime in Queens NYC</u></h2>
-Your sense of safety largely depends on the crime rate of where you live. I use python dataframes from Pandas to clean the data, seaborn line-plots, count-plots and matplotlib.pyplot to display the data & visualize trends, and a folium map to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since the Covid-19 shutdown. I am trying to visualize and identify the trend of crime in Queens NYC.
+Your sense of safety largely depends on the crime rate of where you live. 
+I used python dataframes from Pandas to clean data from nycOpenData provided by NYPD.
+Then I used seaborn line-plots, count-plots and matplotlib.pyplot to display the data & visualize trends, and a folium map to display the area of each precinct. I then categorized which neighborhoods have had an increase in crime since the Covid-19 shutdown. I am trying to visualize and identify the trend of crime in Queens NYC.
 </header>
 <br/>
 
