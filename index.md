@@ -31,7 +31,7 @@ Then I used seaborn line-plots, count-plots and matplotlib.pyplot to display the
 ![Crimes by precinct in queens](crimesByPrec.png)
     
 
-<h4 style="text-align:center"> You can use the map while viewing the histogram and table to see where each precinct is and find the precinct covering your neighborhood </h4>
+<h4 style="text-align:center"> You can use the map while viewing the histogram and table to see where each precinct is located and find the precinct covering your neighborhood </h4>
 <iframe style="text-align:center" src="map.html" height="500" width="500"></iframe>
 
 <h4 style="text-align:center"> You can use the table below to see which precincts and types of crime have increased since March of 2020 (Post Covid-19 shut-down) </h4>
